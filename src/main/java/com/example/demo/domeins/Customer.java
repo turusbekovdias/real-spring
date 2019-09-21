@@ -19,6 +19,31 @@ public class Customer {
     private String homeNumber;
     private String email;
 
+    public Customer () {}
+
+    public Customer (Integer id, String firstname, String lastname, String middlename,
+                     String mobileNumber, String homeNumber, String email) {
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.middlename = middlename;
+        this.mobileNumber = mobileNumber;
+        this.homeNumber = homeNumber;
+        this.email = email;
+    }
+
+    public Customer (String firstname, String lastname, String middlename,
+                     String mobileNumber, String homeNumber, String email) {
+
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.middlename = middlename;
+        this.mobileNumber = mobileNumber;
+        this.homeNumber = homeNumber;
+        this.email = email;
+    }
+
+
     public Integer getId() {
         return id;
     }
