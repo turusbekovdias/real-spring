@@ -28,4 +28,15 @@ public class Branch {
     public void setName(String name) {
         this.name = name;
     }
+
+    public Branch (Integer id, String name){
+        this.id = id;
+        this.name = name;
+    }
+
+    public Branch (String name) {
+        this.name = name;
+    }
+
+    public Branch (){}
 }
